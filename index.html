@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WILD NATION</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="container">
     <nav class="navbar">
-        <div class="logo1">
+        <div data-aos="fade-right" class="logo1">
             <a href="./index.html"><img src="./assets/img/logojunto.png" alt=""></a>
         </div>
-        <ul>
+        <ul data-aos="fade-down">
             <li><a class="paginas" href="./index.html">HOME</a></li>
             <li><a class="paginas" href="./pages/matches.html">MATCHES</a></li>
             <li><a class="paginas" href="./pages/roster.html">ROSTER</a></li>
@@ -22,7 +23,7 @@
             <li><a class="paginas" href="./pages/about us.html">ABOUT US</a></li>
             <li><a class="paginas" href="./pages/contact.html">CONTACT</a></li>
         </ul>
-        <div class="redes">
+        <div data-aos="fade-left" class="redes">
             <img src="./assets/img/youtube.png" alt="">
             <img src="./assets/img//twitter.png" alt="">
             <img src="./assets/img//twitch.png" alt="">
@@ -102,8 +103,13 @@
                 <a href=""><img src="./assets/img/twitchblanco.png" alt=""></a>
             </div>
         </div>
-                <h5 class="h5">Wild Nation ©2022 All rights reserved</h5>
+        <h5 class="h5">Wild Nation ©2022 All rights reserved</h5>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
