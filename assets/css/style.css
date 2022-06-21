@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: gameofsquid;
+    src: url(../fonts/Gameofsquid.ttf);
+}
+
+@font-face {
+    font-family: chino;
+    src: url(../fonts/chineserocksrg.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: montserrat;
+
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar navbar navbar navbar"
+                         "header header header header"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+
+.navbar {
+    grid-area: navbar;
+    position: sticky;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 15px;
+    box-shadow: 0 4px 4px #00000026;
+    z-index: 20;
+    background-color: rgb(255, 255, 255);
+    top: 0%;
+    text-transform: uppercase;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.logo1 img {
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.nombre {
+    padding: 10px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.imagen {
+    width: 100%;
+}
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.nombres {
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.fotos {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+a {
+    color: black;
+    font-weight: 800;
+    font-style: normal
+}
+
+.contenedorMarcas {
+    display: flex;
+}
+
+.marcas {
+    width: 270px;
+}
+
+.paginas:hover {
+    color: rgb(17, 0, 255);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#tituloTexto {
+    display: flex;
+    justify-content: left;
+    color: rgb(0, 0, 0);
+    margin-left: 120px;
+    margin-top: 80px;
+    font-size: 28px;
+    font-family: gameofsquid;
+}
+
+#aboutus {
+    display: flex;
+    justify-content: left;
+    font-family: chino;
+    color: #4207AD;
+    margin-left: 120px;
+    font-size: 120px;
+
+}
+
+.texto1 {
+    display: flex;
+    margin-left: 120px;
+    text-align: left;
+    align-items: center;
+    font-size: 28px;
+}
+
+.texto1 p {
+    margin-top: -150px;
+}
+
+#f1 {
+    width: 650px;
+    margin-left: 140px;
+    margin-right: 150px;
+}
+
+.fotos2 h6 {
+    font-size: 20px;
+    background: linear-gradient(to right, #ffffff 25%, #4207AD 21%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 120px;
+    margin-right: 200px;
+}
+
+.contenedorMail {
+    background-image: url(../img/emailbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 70px;
+}
+
+.contenedorForm {
+    position: relative;
+    margin-right: 220px;
+    width: 500px;
+    margin-top: 5px;
+    border: rgb(255, 255, 255) solid;
+    border-radius: 2px;
+}
+
+.mail {
+    width: 100%;
+}
+
+.redes img {
+    width: 32px;
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.tituloTexto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+#esport {
+    font-family: gameofsquid;
+}
+
+.Titulo2 {
+    font-family: chino;
+    color: #4207AD;
+    font-size: 50px;
+}
+
+.fotos3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.footer1{
+    grid-area: footer;
+}
+
+.footer h6 {
+    font-size: 20px;
+    background: linear-gradient(to right, #ffffff 18%, #4207AD 17%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer__img {
+    width: 230px !important;
+    margin-left: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    height: 250px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    color: rgb(255, 255, 255);
+}
+
+.footer img {
+    width: 32px;
+}
+
+.btn {
+    position: absolute;
+    right: 0;
+    background-color: #c300ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.footer3 p {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+    margin-right: 50px;
+}
+
+.h5 {
+    
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.shop{
+    width: 100%;
+}
+
+.TituloShop{
+        font-family: chino;
+        color: #4207AD;
+        font-size: 70px;
+}
+
+.contenedorShop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedorShop2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.shopTitulo{
+    font-size: 18px;
+    margin: 5px 0px;
+    
+}
+.shopDesc{
+    padding: 5px;
+    
+}
+.shopTotal{
+    padding: 5px;
+    font-size: 32px;
+}
+.btnShop{
+    background-color: #4207AD;
+    padding: 8px 12px;
+    color: white;
+    border: 0px;
+    width: 280px;
+    text-transform: uppercase;
+}
+.contenedorShop img{
+    padding: 10px;
+    width: 300px;
+}
+.contact{
+    width: 100%;
+}
+#tituloContact{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    margin: 50px;
+    font-family: gameofsquid;
+}
+#btnformu{
+    margin-left: 170px;
+    
+}
+.cajaContacto{
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+.cajaDatos{
+    background-color: rgba(128, 128, 128, 0.144);
+    margin: 10px;
+    padding: 10px;
+    width: 600px;
+}
+.formulario{
+    width: 200px;
+    margin: 10px;
+}
+.tituloFormulario{
+    padding: 10px;
+}
+.fullname{
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+}
+.email{
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+}
+.text{
+    margin: 10px;
+    width: 500px;
+    padding: 10px;
+}
+.submit{
+    margin: 10px;
+    padding: 10px;
+    background-color: #4207AD;
+    color: white;
+    width: 200px;
+}
+
+.telefono{
+    font-size: 24px;
+    margin: 10px;
+    padding: 20px;
+}
+.mailcontacto{
+    font-size: 24px;
+    margin: 10px;
+    padding: 20px;
+}
+.ubicacion{
+    font-size: 24px;
+    margin: 10px;
+    padding: 20px;
+}
+.tituloUbi{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    margin-top: 50px;
+    font-family: gameofsquid;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapa{
+    width: 85%;
+    height: 700px;
+    margin-bottom: 70px;
+    margin-top: 25px;
+}
+
+@media(max-width:1500px){
+    #aboutus {
+        margin-bottom: 200px;
+        font-family: chino;
+        color: #4207AD;
+        font-size: 120px;
+    
+    }
+    .texto1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #f1 {
+        width: 600px;
+        margin-left: 140px;
+        margin-right: 150px;
+    }
+    .contenedorForm {
+        width: 300px;
+        
+    }
+    .mail {
+        width: 250px;
+    }
+
+}
+
+
+@media(max-width:1400px) {
+    .navbar ul li {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .logo1 img {
+        margin-top: 10px;
+        padding: 5px;
+        width: 200px;
+    }
+
+    .redes img {
+        width: 24px;
+    }
+
+    .redes {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .contenedorMarcas {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .marcas {
+        width: 160px;
+    }
+
+    #spo {
+        display: none;
+    }
+
+    #lg {
+        display: none;
+    }
+    #aboutus {
+        margin-bottom: 200px;
+        font-family: chino;
+        color: #4207AD;
+        font-size: 120px;
+    
+    }
+    .texto1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #f1 {
+        width: 600px;
+        margin-left: 140px;
+        margin-right: 150px;
+    }
+    .fotos3 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenedorMail {
+        background-image: url(../img/Newsletter_Mobile.jpg);
+    }
+    #nueve{
+        width: 300px;
+        height: 200px;
+    }
+    #method{
+        width: 300px;
+        height: 200px;
+    }
+    #TL{
+        width: 300px;
+        height: 200px;
+    }
+    #apex{
+        display: none;
+    }
+
+}
+
+/*1652 x 937*/
+@media(max-width:768px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul li {
+        display: none;
+    }
+
+    .logo1 img {
+        margin-top: 10px;
+        padding: 5px;
+        width: 260px;
+    }
+    .redes img{
+        width: 40px;
+    }
+
+    .contenedorMarcas {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .marcas {
+        width: 170px;
+    }
+    #adi{
+        display: none;
+    }
+    #visa{
+        display: none;
+    }
+
+    #spo {
+        display: none;
+    }
+
+    #lg {
+        display: none;
+    }
+    #tituloTexto {
+        display: flex;
+        justify-content: left;
+        color: rgb(0, 0, 0);
+        font-size: 28px;
+        font-family: gameofsquid;
+        margin-left: 50px;
+    }
+    
+    #aboutus {
+        display: flex;
+        justify-content: left;
+        font-family: chino;
+        color: #4207AD;
+        margin-left: 50px;
+        font-size: 120px;
+    
+    }
+    .texto1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    #f1 {
+        width: 500px;
+        margin-left: 50px;
+    }
+    .fotos3 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenedorMail {
+        background-image: url(../img/Newsletter_Mobile.jpg);
+    }
+
+    #nueve{
+        width: 150px;
+        height: 180px;
+    }
+    #method{
+        width: 150px;
+        height: 180px;
+    }
+    #TL{
+        width: 150px;
+        height: 180px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
